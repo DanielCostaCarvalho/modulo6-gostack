@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'instarocket' do
-  # Pods for instarocket
+target 'modulo6' do
+  # Pods for modulo6
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
@@ -27,7 +27,9 @@ target 'instarocket' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'instarocketTests' do
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  target 'modulo6Tests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -35,10 +37,10 @@ target 'instarocket' do
   use_native_modules!
 end
 
-target 'instarocket-tvOS' do
-  # Pods for instarocket-tvOS
+target 'modulo6-tvOS' do
+  # Pods for modulo6-tvOS
 
-  target 'instarocket-tvOSTests' do
+  target 'modulo6-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
